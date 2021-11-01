@@ -1,6 +1,6 @@
 import moment from 'moment'
 
-const DateTimePretty = (Component) => {
+const withPrettyDate = (Component) => {
   return (props) => {
     return (
       <Component {...props} date={moment(props.date, "YYYY-MM-DD hh:mm:ss").fromNow()} />
@@ -8,4 +8,4 @@ const DateTimePretty = (Component) => {
   }
 }
 
-export default DateTimePretty;
+export default withPrettyDate;

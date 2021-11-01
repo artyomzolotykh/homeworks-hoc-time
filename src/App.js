@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import VideoList from './components/VideoList';
+import UpgradedVideoList from './components/UpgradedVideoList';
 
 export default function App() {
     const [list, setList] = useState([
@@ -30,6 +30,6 @@ export default function App() {
     ]);
 
     return (
-        <VideoList list={list} />
+        <UpgradedVideoList list={list} />
     );
 }
